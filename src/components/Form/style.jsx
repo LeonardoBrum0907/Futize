@@ -48,16 +48,6 @@ export const FormContainer = styled.form`
       width: 100%;
       display: flex;
       justify-content: space-between;
-
-      input {
-        background: transparent;
-        border: 1px solid ${(props) => props.theme.text};
-        padding: 20px;
-        border-radius: 24px;
-        text-transform: uppercase;
-        width: 45%;
-        color: ${(props) => props.theme.text};
-      }
     }
 
     textarea {
@@ -109,10 +99,10 @@ export const FormContainer = styled.form`
       height: 30px;
       width: 30px;
       font-size: 1rem;
-      color: $white-color;
+      color: white;
       border-radius: 50%;
       border: none;
-      background-color: $black-color;
+      background-color: gray;
       cursor: pointer;
       opacity: 0.9;
 
@@ -121,4 +111,14 @@ export const FormContainer = styled.form`
       }
     }
   }
+`
+
+export const Input = styled.input`
+  background: transparent;
+  border: 1px solid ${(props) => props.theme.text};
+  padding: 20px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  width: 45%;
+  color: ${(props) => props.theme.text};
 `
